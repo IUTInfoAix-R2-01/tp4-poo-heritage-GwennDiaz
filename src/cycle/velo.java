@@ -47,6 +47,7 @@ public class velo {
 		this.genAlea = genAlea;
 	}
 	
+	@Override
 	public String toString() {
 		return "velo [braquet=" + braquet + ", diamRoue=" + diamRoue + ", genAlea=" + genAlea + "]";
 	}
