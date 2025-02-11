@@ -1,0 +1,12 @@
+5) Redéfinir une méthode signifie reprendre la fonction de la classe mère et la changer.
+
+6) toString()
+getPuissance()
+
+7) Cette annotation est un marqueur utilisé par le compilateur pour vérifier la réécriture de méthodes héritées
+
+8) Sa présence apporte la vérification par le compilateur mais ce n’est pas une erreur de l’enlever.
+
+9)voir le code
+
+10)
