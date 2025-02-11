@@ -9,6 +9,14 @@ public class veloElec extends velo {
 		super();
 	}
 	
+	public veloElec(double diamRoue, double coupleMoteur) {
+		super();
+	}
+	
+	public veloElec() {
+		
+	}
+	
 	public static double getDEFAUT_FACTEUR_PUISSANCE_MOTEUR() {
 		return DEFAUT_FACTEUR_PUISSANCE_MOTEUR;
 	}
@@ -25,13 +33,16 @@ public class veloElec extends velo {
 		this.facteurPuissanceMoteur = facteurPuissanceMoteur;
 	}
 
-	public static void main(String[] args) {
-
-	}
-
 	public String toString() {
 		return "veloElec [facteurPuissanceMoteur=" + facteurPuissanceMoteur + "]";
 	}
 	
+	public double getPuissance(double FrequenceCoupsDePedale) {
+		return super.getPuissance(FrequenceCoupsDePedale) * facteurPuissanceMoteur;
+	}
 	
+	public static void main(String[] args) {
+		velo v1 = new velo ();
+		System.out.println(v1);
+	}
 }
